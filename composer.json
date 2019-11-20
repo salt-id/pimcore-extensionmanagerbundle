@@ -1,0 +1,27 @@
+{
+    "name": "saltid/pimcore-extensionmanagerbundle",
+    "description": "PT. Ako Media Asia (SALT) Extension Manager, For manage others bundle from SALT",
+    "type": "pimcore-bundle",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Yulius Ardian Febrianto",
+            "email": "yuliusardin@gmail.com"
+        }
+    ],
+    "require": {
+        "pimcore/pimcore": "^5.4.0 | ^6.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SaltId\\ExtensionManagerBundle\\" : "src/ExtensionManagerBundle/"
+        }
+    },
+    "extra": {
+        "pimcore": {
+            "bundles": [
+                "SaltId\\ExtensionManagerBundle\\ExtensionManagerBundle"
+            ]
+        }
+    }
+}

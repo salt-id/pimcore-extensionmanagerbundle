@@ -1,0 +1,5 @@
+extension_manager:
+    resource: "@ExtensionManagerBundle/Controller/"
+    type:     annotation
+    prefix:   /saltid/extensionmanager
+
