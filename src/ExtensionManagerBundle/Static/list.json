@@ -1,0 +1,32 @@
+{
+  "extensions":[
+    {
+      "id":"SaltId\\ElasticSearchBundle\\ElasticSearchBundle",
+      "type":"bundle",
+      "name":"Elasticsearch",
+      "repository": "https://github.com/salt-id/pimcore-elasticsearchbundle",
+      "description":"Manage elasticsearch in Pimcore"
+    },
+    {
+      "id":"SaltId\\ExtensionManagerBundle\\ExtensionManagerBundle",
+      "type":"bundle",
+      "name":"Extension Manager",
+      "repository": "https://github.com/salt-id/pimcore-extensionmanagerbundle",
+      "description":"PT. Ako Media Asia (SALT) Extension Manager, For manage others bundle provide by SALT"
+    },
+    {
+      "id":"SaltId\\SeoSerpBundle\\SeoSerpBundle",
+      "type":"bundle",
+      "name":"SEO/SERP",
+      "repository": "https://github.com/salt-id/pimcore-seoserpbundle",
+      "description":"SEO/SERP Bundle for Pimcore."
+    },
+    {
+      "id":"SaltId\\CountlyBundle\\CountlyBundle",
+      "type":"bundle",
+      "name":"Countly",
+      "repository": "https://github.com/salt-id/pimcore-countlypbundle",
+      "description":"Countly analytics for Pimcore."
+    }
+  ]
+}

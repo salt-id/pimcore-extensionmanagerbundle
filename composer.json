@@ -1,6 +1,6 @@
 {
     "name": "saltid/pimcore-extensionmanagerbundle",
-    "description": "PT. Ako Media Asia (SALT) Extension Manager, For manage others bundle from SALT",
+    "description": "PT. Ako Media Asia (SALT) Extension Manager, For manage others bundle provide by SALT",
     "type": "pimcore-bundle",
     "license": "GPL-3.0-or-later",
     "authors": [
@@ -23,5 +23,7 @@
                 "SaltId\\ExtensionManagerBundle\\ExtensionManagerBundle"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": false
 }

@@ -22,6 +22,7 @@ class ExtensionManagerBundle extends AbstractPimcoreBundle
     public function getJsPaths()
     {
         return [
+            '/bundles/extensionmanager/js/pimcore/extensionmanager/list.js',
             '/bundles/extensionmanager/js/pimcore/startup.js'
         ];
     }

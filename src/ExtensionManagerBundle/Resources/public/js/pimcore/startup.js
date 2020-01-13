@@ -20,7 +20,12 @@ pimcore.plugin.ExtensionManagerBundle = Class.create(pimcore.plugin.admin, {
                 text: "Extension List",
                 iconCls: "pimcore_nav_icon_bundles",
                 handler: function () {
-                    alert("Alpha One");
+                    try {
+                        pimcore.globalmanager.get("extensionmanager_list").activate();
+                    }
+                    catch (e) {
+                        pimcore.globalmanager.add("extensionmanager_list", new saltid.extensionmanager.list());
+                    }
                 }
             }
             ],
