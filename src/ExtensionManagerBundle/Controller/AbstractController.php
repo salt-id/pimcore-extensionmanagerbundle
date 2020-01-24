@@ -9,12 +9,21 @@
 namespace SaltId\ExtensionManagerBundle\Controller;
 
 use Pimcore\Controller\FrontendController;
+use Pimcore\Model\User;
+use Pimcore\Tool\Session;
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 
 abstract class AbstractController extends FrontendController
 {
     public function onKernelController(FilterControllerEvent $event)
     {
         parent::onKernelController($event);
+
+        $session = Session::getReadOnly();
+        $user = $session->get('user');
+        if (!$user instanceof User) {
+            throw new HttpException(401, 'NO NO NO AUTH ');
+        }
     }
 }

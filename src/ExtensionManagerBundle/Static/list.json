@@ -25,7 +25,7 @@
       "id":"SaltId\\CountlyBundle\\CountlyBundle",
       "type":"bundle",
       "name":"Countly",
-      "repository": "https://github.com/salt-id/pimcore-countlypbundle",
+      "repository": "https://github.com/salt-id/pimcore-countlybundle",
       "description":"Countly analytics for Pimcore."
     }
   ]
